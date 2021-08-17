@@ -25,7 +25,7 @@ Plugins:
 Get Pipeline code from here:
 https://github.com/ejazzazeem/eks_cluster_jenkins_pipeline/blob/main/Jenkinsfile
 
-Menual Testing:
+Manual Testing:
 ----------
 
 You can provision multiple EKS clusters with a single `terraform apply`:
