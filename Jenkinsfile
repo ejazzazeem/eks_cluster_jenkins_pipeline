@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('checkout') {
         steps {
-            git 'https://github.com/ejazzazeem/SRE_Unzer_TakeHomeTest.git'
+            git 'https://github.com/ejazzazeem/eks_cluster_jenkins_pipeline.git'
         }
     }
 	stage('Setup') {
