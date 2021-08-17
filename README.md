@@ -1,4 +1,4 @@
-# clusters Terraform creation
+# EKS Clusters Terraform creation with Jenkins Pipeline
 
 Allow SUDO permissions for Jenkins User:
 ----------------------------------------
@@ -24,6 +24,9 @@ Plugins:
  Terraform
 Get Pipeline code from here:
 https://github.com/ejazzazeem/eks_cluster_jenkins_pipeline/blob/main/Jenkinsfile
+
+Menual Testing:
+----------
 
 You can provision multiple EKS clusters with a single `terraform apply`:
 
