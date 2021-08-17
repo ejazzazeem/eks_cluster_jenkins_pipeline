@@ -1,5 +1,28 @@
 # clusters Terraform creation
 
+Allow SUDO permissions for Jenkins User:
+----------------------------------------
+ visudo
+Add below line inside the file and save it
+ jenkins ALL=(ALL)       NOPASSWD: ALL
+ 
+Make PasswordAuthentication to yes:
+-----------------------------------
+ vi /etc/ssh/sshd_config
+Change PasswordAuthentication value from no to yes
+Restart sshd service:
+ service sshd restart
+Download 1.14.6 version of kubectl and aws-iam-authenticator
+
+https://docs.aws.amazon.com/eks/lates...
+https://docs.aws.amazon.com/eks/lates...
+Plugins:
+----------
+ Pipeline: AWS steps
+ Terraform
+Get Pipeline code from here:
+    https://github.com/ejazzazeem/eks_cluster_jenkins_pipeline/blob/main/Jenkinsfile
+
 You can provision multiple EKS clusters with a single `terraform apply`:
 
 ```bash
