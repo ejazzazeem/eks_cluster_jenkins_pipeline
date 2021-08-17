@@ -17,3 +17,5 @@ At the end you will have:
 1. A cluster for production.
 
 In the same folder you will find a kubeconfig file for each cluster.
+
+NOTE: This full configuration utilizes the Terraform http provider to call out to icanhazip.com to determine your local workstation external IP for easily configuring EC2 Security Group access to the Kubernetes master servers. Feel free to replace this as necessary.
